@@ -1,7 +1,10 @@
-import 'package:faculty_tool_box/screen/home/couse_screen.dart';
+import 'package:faculty_tool_box/screen/home/course_screen.dart';
+import 'package:faculty_tool_box/screen/home/material_screen.dart';
+import 'package:faculty_tool_box/screen/home/topic_screen.dart';
 import 'package:get/get.dart';
 
 import '../binding/home_binding.dart';
+
 import 'routes.dart';
 
 class AppPages {
@@ -14,6 +17,16 @@ class AppPages {
     GetPage(
       name: Routes.COURSE_SCREEN,
       page: () => const CourseScreen(),
+      binding: HomeBinding(),
+    ),
+    GetPage(
+      name: Routes.TOPIC_SCREEN,
+      page: () => const TopicScreen(),
+      binding: HomeBinding(),
+    ),
+    GetPage(
+      name: Routes.MATERIAL_SCREEN,
+      page: () => const MaterialScreen(),
       binding: HomeBinding(),
     ),
   ];
